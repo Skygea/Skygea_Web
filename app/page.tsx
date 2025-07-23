@@ -15,25 +15,25 @@ import ContactForm from "@/components/ContactForm";
 export default function Home() {
   const chooseUs = [
     {
-      icon: <Target size={80} />,
+      icon: <Target size={70} />,
       title: "Client-Centric Approach",
       description:
         "Your success is our priority. We take the time to understand your goals and provide personalized services that help you achieve them. Whether you need a new website, branding design, or SEO campaign, we are dedicated to exceeding your expectations.",
     },
     {
-      icon: <Rocket size={80} />,
+      icon: <Rocket size={70} />,
       title: "Innovative Solutions",
       description:
         "We provide cutting-edge software and graphic design services tailored to meet your business needs. Our team stays ahead of the curve with the latest trends and technologies, ensuring that you get solutions that are not only functional but also future-proof.",
     },
     {
-      icon: <Star size={80} />,
+      icon: <Star size={70} />,
       title: "Experienced & Creative Team",
       description:
         "Our team is made up of highly skilled developers, designers, and SEO experts with a passion for innovation. We pride ourselves on delivering exceptional results, and our years of industry experience give us an edge in providing value to our clients.",
     },
     {
-      icon: <Handshake size={80} />,
+      icon: <Handshake size={70} />,
       title: "End-to-End Support",
       description:
         "From consultation to delivery, we offer full support throughout the project lifecycle. Our dedicated project managers ensure that every aspect of the project is handled with care and precision, so you can focus on what matters most – growing your business.",
@@ -126,8 +126,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col items-center justify-center px-30 mt-30">
-      <h1 className="text-8xl font-semibold">
+      <section className="w-full flex flex-col items-center justify-center px-3 my-30">
+      <h1 className="text-8xl font-semibold mb-30">
           Contact{" "}
           <span className="bg-gradient-to-r from-gradient1 to-gradient3 bg-clip-text text-transparent">
             Us
