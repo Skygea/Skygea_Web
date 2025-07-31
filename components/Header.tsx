@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import { motion } from "motion/react"; // ✅ fix import here
+import { useRouter } from "next/navigation";
 
 interface HeaderProps {
   className?: string;
@@ -11,6 +12,9 @@ interface HeaderProps {
 const navItems = ["Marketing", "Design", "Products"];
 
 const Header = ({ className }: HeaderProps) => {
+
+  const router = useRouter();
+
   return (
     <header
       className={cn(
@@ -31,7 +35,7 @@ const Header = ({ className }: HeaderProps) => {
               {navItems.map((item) => (
                 <motion.li
                   key={item}
-                 
+                  onClick={()=>router.push(`/${item.toLowerCase()}`)}
                   className="cursor-pointer hover:text-[#A93FFD] transition-colors duration-300"
                 >
                   {item}
