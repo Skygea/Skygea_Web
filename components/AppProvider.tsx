@@ -3,6 +3,7 @@ import { ThemeProvider } from "next-themes";
 import React from "react";
 import { Toaster } from "./ui/sonner";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const AppProvider = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -12,6 +13,7 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
           <Header />
         </div>
         {children}
+        <Footer/>
         <Toaster
           position="top-right"
           richColors
