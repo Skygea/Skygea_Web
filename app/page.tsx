@@ -41,7 +41,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative font-sans items-center justify-items-center  bg-[linear-gradient(to_right,rgb(8,0,43),rgb(0,0,0))] ">
+    <div className="relative font-sans items-center justify-items-center mt-30 lg:mt-0 ">
         <Image
           src="/images/Ellipse.png"
           alt="ellipse"
@@ -71,7 +71,7 @@ export default function Home() {
             <br />
             comprehensive solutions that drive growth and efficiency.
           </p>
-          <div className="flex justify-evenly mt-20 px-30">
+          <div className="flex justify-evenly gap-5 flex-wrap mt-20 px-30">
             <motion.div className="flex flex-col items-center gap-8 font-semibold">
               <motion.div whileHover={{ opacity: 0.6 }}>
                 <ShieldCheck size={80} />{" "}
@@ -99,15 +99,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col items-center justify-center  px-30 ">
-        <h1 className="text-8xl font-semibold">
+      
+      <section className="w-full flex flex-col items-center justify-center   mt-30 lg:mt-0 ">
+        <h1 className="text-5xl md:text-8xl font-semibold">
           Why Choose{" "}
           <span className="bg-gradient-to-r from-gradient1 to-gradient3 bg-clip-text text-transparent">
             Us
           </span>
         </h1>
         <div className="flex flex-col justify-around mt-30" >
-          <div className="flex justify-between flex-wrap gap-10">
+          <div className="flex justify-between flex-wrap gap-10 px-30">
             {chooseUs.map((item, index) => (
               <motion.div
                 key={index}
@@ -126,8 +127,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col items-center justify-center px-3 my-30">
-      <h1 className="text-8xl font-semibold mb-30">
+      <section className="w-full flex flex-col items-center justify-center px-3 my-30 ">
+      <h1 className="text-5xl md:text-8xl font-semibold mb-20">
           Contact{" "}
           <span className="bg-gradient-to-r from-gradient1 to-gradient3 bg-clip-text text-transparent">
             Us

@@ -7,21 +7,23 @@ import Header from "./Header";
 const AppProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThemeProvider defaultTheme="dark" attribute="class">
-      <div className="absolute h-15">
-        <Header />
+      <div className="bg-[linear-gradient(to_right,rgb(8,0,43),rgb(0,0,0))] h-screen overflow-y-scroll  ">
+        <div className="absolute h-15 ">
+          <Header />
+        </div>
+        {children}
+        <Toaster
+          position="top-right"
+          richColors
+          toastOptions={{
+            classNames: {
+              toast: "text-xl",
+              title: "text-lg font-semibold",
+              description: "text-sm opacity-80",
+            },
+          }}
+        />
       </div>
-      {children}
-      <Toaster
-        position="top-right"
-        richColors
-        toastOptions={{
-          classNames: {
-            toast: "text-xl",
-            title: "text-lg font-semibold",
-            description: "text-sm opacity-80",
-          },
-        }}
-      />
     </ThemeProvider>
   );
 };
