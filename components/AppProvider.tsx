@@ -8,7 +8,7 @@ import Footer from "./Footer";
 const AppProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThemeProvider defaultTheme="dark" attribute="class">
-      <div className="bg-[linear-gradient(to_right,rgb(8,0,43),rgb(0,0,0))] h-screen overflow-y-scroll  ">
+      <div className="bg-[linear-gradient(to_right,rgb(8,0,43),rgb(0,0,0))] h-screen overflow-y-scroll customScrollBar ">
         <div className="absolute h-15 ">
           <Header />
         </div>

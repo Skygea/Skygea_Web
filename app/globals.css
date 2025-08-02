@@ -132,3 +132,20 @@
   }
 }
 
+.customScrollBar::-webkit-scrollbar
+{
+	width: 7px;
+
+
+}
+
+.customScrollBar::-webkit-scrollbar-thumb
+{
+	border-radius: 20px;
+	background-color: #00baf3;
+	background-image: -webkit-gradient(linear,
+									   40% 0%,
+									   75% 84%,
+									   from(#9e3af5),
+									   to(#763AF5)) 
+}
