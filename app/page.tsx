@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col items-center justify-center px-3 my-30 ">
+      <section id="contact" className="w-full flex flex-col items-center justify-center px-3 my-30 ">
       <h1 className="text-5xl md:text-8xl font-semibold mb-20">
           Contact{" "}
           <span className="bg-gradient-to-r from-gradient1 to-gradient3 bg-clip-text text-transparent">
