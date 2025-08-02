@@ -3,9 +3,10 @@
 import React from 'react';
 import { Tree, TreeNode } from 'react-organizational-chart';
 import Image from 'next/image';
+import { motion } from "motion/react";
 
 const NodeBox = ({ name, imgSrc }: { name: string; imgSrc: string }) => (
-  <div className="flex flex-col items-center  rounded-xl shadow-lg p-4 min-w-[120px]">
+  <motion.div whileHover={{scale:1.05}} className="flex flex-col items-center  rounded-xl shadow-lg p-4 min-w-[120px]">
     <Image
       src={imgSrc}
       alt={name}
@@ -16,7 +17,7 @@ const NodeBox = ({ name, imgSrc }: { name: string; imgSrc: string }) => (
    <p className="mt-2 max-w-50 text-2xl font-medium text-center break-words whitespace-normal">
       {name}
     </p>
-  </div>
+  </motion.div>
 );
 
 const Design = () => {
@@ -47,7 +48,7 @@ const Design = () => {
             lineColor="#ccc"
             lineBorderRadius="10px"
             nodePadding='20px'
-            lineHeight='50px'
+            lineHeight='40px'
             label={
                 <div className="p-4 min-w-[120px] text-center font-semibold text-4xl ">
                   Our Design Expertise
@@ -60,6 +61,18 @@ const Design = () => {
             <TreeNode label={<NodeBox name="Social Media Graphics" imgSrc="./images/Group 51.svg" />} />
             <TreeNode label={<NodeBox name="UI/UX Design" imgSrc="./images/Group 52.svg" />} />
           </Tree>
+        </div>
+        <div className='mt-20'>
+        <p className="p-4 min-w-[120px] text-center font-semibold text-4xl ">
+                  Our Design Expertise
+                </p>
+          <div className="flex flex-col md:hidden gap-5 mt-10">
+            <NodeBox name="Logo & Branding" imgSrc="./images/Group 48.svg" />
+            <NodeBox name="Marketing Materials" imgSrc="./images/Group 49.svg" />
+            <NodeBox name="Packaging Design" imgSrc="./images/Group 50.svg" />
+            <NodeBox name="Social Media Graphics" imgSrc="./images/Group 51.svg" />
+            <NodeBox name="UI/UX Design" imgSrc="./images/Group 52.svg" />
+          </div>
         </div>
       </section>
     </div>
